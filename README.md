@@ -10,3 +10,15 @@ npm install
 ```
 npm run dev
 ```
+
+##### Default port is set to 9000, to change this go to webpack.config.dev.js and change the line port
+```
+devServer: {
+    host: 'localhost',
+    port: 9000,
+    hot: true,
+    watchOptions: {
+      poll: true
+    }
+  }
+```
