@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils';
-import App from '../src/App.vue';
+import App from '../src/components/App'
 
 test('App  ', () => {
     const vue = createLocalVue();
