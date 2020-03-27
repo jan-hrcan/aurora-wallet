@@ -36,12 +36,12 @@ module.exports = {
         }
       },
       {
-        test: /\.(s*)css$/,
+        test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader', 
+          'css-loader',
           'sass-loader'
-        ]
+        ] 
       },
       {
         test: /\.js$/,
@@ -62,10 +62,10 @@ module.exports = {
       template: 'index.html',
       inject: true
     }),
-    new MiniCssExtractPlugin({
-      filename: isDevelopMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: isDevelopMode ? '[id].css' : '[id].[hash].css'
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: isDevelopMode ? '[name].css' : '[name].[hash].css',
+    //   chunkFilename: isDevelopMode ? '[id].css' : '[id].[hash].css'
+    // }),
     new CopyWebpackPlugin([{
       from: resolve('assets/images'),
       to: resolve('dist/assets/images'),
