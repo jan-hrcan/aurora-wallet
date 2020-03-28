@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header :routes="routes" />
-    <h1>Aurora App</h1>
     <router-view />
   </div>
 </template>

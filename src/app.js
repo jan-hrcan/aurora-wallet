@@ -12,6 +12,18 @@ export const routes = [
     title: 'test',
     path: '/test',
     component: App
+  },
+  {
+    name: 'test',
+    title: 'test',
+    path: '/test',
+    component: App
+  },
+  {
+    name: 'test',
+    title: 'test',
+    path: '/test',
+    component: App
   }
 ]
 

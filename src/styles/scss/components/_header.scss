@@ -1,0 +1,35 @@
+@import '../colors';
+
+header {
+    height: 80px;
+    background-color: $Color1;
+    nav {
+        float: left;
+        ul {
+            display: inline-block;
+            list-style: none;
+            margin: 1rem;
+            a {
+                display: inline-block;
+                color: $Color5;
+                text-decoration: none;
+                padding-right: 1rem;
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    background: $Color5;
+                    transition: width .5s;
+                }
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .header_button_container {
+        float: right;
+        padding: 10px;
+    }
+}
