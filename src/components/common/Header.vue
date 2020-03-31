@@ -10,8 +10,11 @@
           {{ route.title }}
         </router-link>
       </ul>
-      <ImageButton :source="source" />
     </nav>
+    <div class="header_button_container">
+      <ImageButton :source="imageSources.profileImage" />
+      <ImageButton :source="imageSources.signOutImage" />
+    </div>
   </header>
 </template>
 
@@ -30,7 +33,10 @@ export default {
   },
   data () {
     return {
-      source: '../assets/images/prof_pic.png'
+      imageSources: {
+        profileImage: '/assets/images/prof_pic.png',
+        signOutImage: '/assets/images/sign_out.png'
+      }
     }
   }
 }
