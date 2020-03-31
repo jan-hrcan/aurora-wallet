@@ -1,6 +1,7 @@
-  <template>
-    <div>
-     <Header :routes="routes" />
+<template>
+  <div>
+    <Header :routes="routes" />
+    <router-view />
        <Footer :routes="routes" />
        <div class="rectangle">
          <h1>About Us</h1>

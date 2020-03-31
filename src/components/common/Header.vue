@@ -10,29 +10,34 @@
           {{ route.title }}
         </router-link>
       </ul>
-      <ImageButton :source="source" />
     </nav>
+    <div class="header_button_container">
+      <ImageButton :source="imageSources.profileImage" />
+      <ImageButton :source="imageSources.signOutImage" />
+    </div>
   </header>
 </template>
 
 <script>
-
-// import ImageButton from './ImageButton.vue'
-// export default {
-//   name: 'Header',
-//   components: {
-//     ImageButton
-//   },
-//   props: {
-//     routes: {
-//       type: Array,
-//       required: true
-//     }
-//   },
-//   data () {
-//     return {
-//       source: '../assets/images/prof_pic.png'
-//     }
-//   }
-// }
+import ImageButton from './ImageButton.vue'
+export default {
+  name: 'Header',
+  components: {
+    ImageButton
+  },
+  props: {
+    routes: {
+      type: Array,
+      required: true
+    }
+  },
+  data () {
+    return {
+      imageSources: {
+        profileImage: '/assets/images/prof_pic.png',
+        signOutImage: '/assets/images/sign_out.png'
+      }
+    }
+  }
+}
 </script>

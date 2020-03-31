@@ -51,6 +51,10 @@ module.exports = {
         test: /\.(js|vue)$/,
         use: 'eslint-loader',
         enforce: 'pre'
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg|gif)$/,
+        use: 'file-loader'
       }
     ]
   },
@@ -67,8 +71,8 @@ module.exports = {
     //   chunkFilename: isDevelopMode ? '[id].css' : '[id].[hash].css'
     // }),
     new CopyWebpackPlugin([{
-      from: resolve('assets/images'),
-      to: resolve('dist/assets/images'),
+      from: './assets/images',
+      to: './dist/assets/images',
       toType: 'dir'
     }])
   ],
