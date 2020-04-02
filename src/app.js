@@ -3,27 +3,16 @@ import App from './components/App.vue'
 import { store } from './store/store'
 import VueRouter from 'vue-router'
 import './styles/main.scss'
+import About from './components/pages/About.vue'
 
 Vue.use(VueRouter)
 
 export const routes = [
   {
-    name: 'test',
-    title: 'test',
-    path: '/test',
-    component: App
-  },
-  {
-    name: 'test',
-    title: 'test',
-    path: '/test',
-    component: App
-  },
-  {
-    name: 'test',
-    title: 'test',
-    path: '/test',
-    component: App
+    name: 'about',
+    title: 'about',
+    path: '/about',
+    component: About
   }
 ]
 

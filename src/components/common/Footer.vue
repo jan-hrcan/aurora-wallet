@@ -1,8 +1,13 @@
 <template>
-  <footer>
-    <!-- so it won't feel alone! -->
-  </footer>
+  <footer />
 </template>
 
 <script>
+export default {
+
+}
 </script>
+
+<style>
+
+</style>

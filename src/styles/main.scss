@@ -1,74 +1,42 @@
 @import 'scss/colors';
 @import 'scss/variables';
-@import 'scss/components/header';
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import 'scss/components/footer';
+@import 'scss/components/header';
+@import 'scss/components/container';
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Dosis', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 body {
     background-color: $Color4;
-}
-
-header {
-    position: absolute;
-    background-color: $Color1;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-footer {
-    position: absolute;
-    background-color: $Color1;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    position: relative;
+    padding-bottom: 20px;
+    min-height: 100vh;
 }
 
 h1 {
     color: $Color5;
     position: absolute;
     text-align: center;
-    font-size: 75px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%) translateY(-50%);
+    top: 20%;
+    left: 15%;
+    width: 40vw;
+    height: 40vw;
+    font-size: 3.5rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.rectangle {
-    position: absolute;
-    background: $Color2;
-    width: 1000px;
-    height: 700px;
-    left: 100px;
-    top: 100px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .text-content {
     color: $Color5;
     position: absolute;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 45px;
-    width: 900px;
-    height: 10px;
-    left: 50px;
-    top: 160px;
+    text-align: center;
+    top: 35%;
+    left: 10%;
+    width: 50vw;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
