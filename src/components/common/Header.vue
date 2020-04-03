@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ImageButton from './ImageButton.vue'
+import ImageButton from '../reusable/ImageButton.vue'
 export default {
   name: 'Header',
   components: {

@@ -1,10 +1,10 @@
 @import 'scss/colors';
 @import 'scss/variables';
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
-@import 'scss/components/footer';
-@import 'scss/components/header';
-@import 'scss/components/container';
-@import 'scss/components/buttons';
+@import 'scss/common/footer';
+@import 'scss/common/header';
+@import 'scss/components/text-container';
+@import 'scss/components/button';
 
 * {
     margin: 0;
