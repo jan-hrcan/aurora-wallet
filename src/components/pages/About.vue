@@ -2,6 +2,7 @@
   <div>
     <div class="container" />
     <h1>About Us</h1>
+    <app-button />
     <div class="text-content">
       “Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun.
       Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended

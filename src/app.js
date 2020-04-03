@@ -4,7 +4,9 @@ import { store } from './store/store'
 import VueRouter from 'vue-router'
 import './styles/main.scss'
 import About from './components/pages/About.vue'
+import Buttons from './components/common/Buttons.vue'
 
+Vue.component('app-button', Buttons)
 Vue.use(VueRouter)
 
 export const routes = [
