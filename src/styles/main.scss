@@ -1,11 +1,43 @@
 @import 'scss/colors';
 @import 'scss/variables';
-@import 'scss/components/header';
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import 'scss/common/footer';
+@import 'scss/common/header';
+@import 'scss/components/text-container';
+@import 'scss/components/button';
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Dosis', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: $Color4;
+    position: relative;
+    padding-bottom: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    color: $Color5;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 15%;
+    width: 40vw;
+    height: 40vw;
+    font-size: 3.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-content {
+    color: $Color5;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 10%;
+    width: 50vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

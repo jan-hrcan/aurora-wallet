@@ -2,15 +2,19 @@
   <div>
     <Header :routes="routes" />
     <router-view />
+    <Footer :routes="routes" />
   </div>
 </template>
-
 <script>
+
 import Header from './common/Header.vue'
+import Footer from './common/Footer.vue'
+
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   },
   data () {
     return {
@@ -27,4 +31,5 @@ export default {
     })
   }
 }
+
 </script>
